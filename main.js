@@ -42,7 +42,7 @@ const isLegal = (startStack, endStack) => {
   // We are are moving a piece from a stack that has pieces.
 if (stacks[startStack].length > 0) {
   // now we can place any piece on an empty stack.
-  if (stacks[startStack].length == 0) {
+  if (stacks[endStack].length == 0) {
     return true;
   }
 // this like makes sure the piece on the end stack is larger than the piece we mare moving  with SLICE.
